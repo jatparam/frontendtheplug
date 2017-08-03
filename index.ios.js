@@ -4,50 +4,65 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+ import React, { Component } from 'react';
+ import {
+   AppRegistry,
+   StyleSheet,
+   Text,
+   View,
+   Image
+ } from 'react-native';
 
-export default class TestProject extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
+ import {
+   Button,
+   PricingCard,
+   SearchBar,
+   SideMenu,
+   List,
+   ListItem
+ } from 'react-native-elements';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+ class LogoImg extends Component {
+   render() {
+     return (
+       <Image source={require('./assets/img/34481-200.png')} />
+     );
+   }
+ }
 
-AppRegistry.registerComponent('TestProject', () => TestProject);
+
+
+ export default class TestProject extends Component {
+   render() {
+     return (
+       <View style={styles.container}>
+         <LogoImg />
+         <Text style={styles.instructions}>
+           Create. Connect
+         </Text>
+       </View>
+     );
+   }
+ }
+
+ const styles = StyleSheet.create({
+   container: {
+     flex: 1,
+     justifyContent: 'center',
+     alignItems: 'center',
+     backgroundColor: '#000000',
+   },
+   welcome: {
+     fontSize: 20,
+     textAlign: 'center',
+     margin: 10,
+     color: '#FFFFFF',
+   },
+   instructions: {
+     textAlign: 'center',
+     color: '#FFFFFF',
+     marginBottom: 5,
+   },
+ });
+
+ AppRegistry.registerComponent('TestProject', () => TestProject);
