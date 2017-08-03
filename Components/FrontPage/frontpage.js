@@ -1,17 +1,38 @@
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  Image
-} from 'react-native';
+
+ import React, { Component } from 'react';
+ import {
+   AppRegistry,
+   StyleSheet,
+   Text,
+   View,
+   Image
+ } from 'react-native';
+
+ import {
+   Button,
+   PricingCard,
+   SearchBar,
+   SideMenu,
+   List,
+   ListItem
+ } from 'react-native-elements';
+
+import LogoImg from './Logo.js';
+import Login from './Login.js';
 
 
-class LogoImg extends Component {
-  render() {
-    return (
-      <Image source={require('./assets/img/34481-200.png')} />
-    );
-  }
-}
+
+class FrontPage extends Component {
+   render() {
+     return (
+       <View>
+         <LogoImg />
+         <Login />
+       </View>
+     );
+   }
+ }
+
+
+
+ export default FrontPage

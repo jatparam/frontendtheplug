@@ -22,24 +22,13 @@ import {
   ListItem
 } from 'react-native-elements';
 
-class LogoImg extends Component {
-  render() {
-    return (
-      <Image source={require('./assets/img/34481-200.png')} />
-    );
-  }
-}
-
-
+import FrontPage from './Components/FrontPage/FrontPage.js'
 
 export default class TestProject extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <LogoImg />
-        <Text style={styles.instructions}>
-          Create. Connect
-        </Text>
+        <FrontPage />
       </View>
     );
   }
@@ -51,17 +40,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#000000',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: '#FFFFFF',
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#FFFFFF',
-    marginBottom: 5,
   },
 });
 
