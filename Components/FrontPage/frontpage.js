@@ -12,7 +12,7 @@
    Button,
    PricingCard,
    SearchBar,
-   SideMenu,
+   SocialIcon,
    List,
    ListItem
  } from 'react-native-elements';
@@ -28,6 +28,11 @@ class FrontPage extends Component {
        <View>
          <LogoImg />
          <Login />
+         <SocialIcon
+         title='Sign In With Facebook'
+         button
+         type='facebook'
+         />
        </View>
      );
    }
