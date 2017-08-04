@@ -7,12 +7,13 @@ import {
 
 import Hero from './Hero.js';
 import Owner from './Owner.js';
-import Collaborator from './Collaborators.js';
+import Collaborators from './Collaborators.js';
 import ProjectInfo from './ProjectDetails/ProjectInfo.js';
 
 
 // Where everything about the specific project will render
-// TODO Render the Hero IMG, Owner Bar, Collaborator Bar, and ProjectDetails
+// TODO Render the ProjectDetails, get scrolling to work, connect to database
+// TODO Location, Schedule
 
 class ProjectPage extends Component {
   render() {

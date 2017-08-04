@@ -5,11 +5,12 @@ import {
   Image
 } from 'react-native';
 
+
+// TODO make image source one the user imports
 class Hero extends Component {
   render() {
     return (
       <View>
-        // TODO make image source one the user imports
         <Image source={require('../../assets/img/6835100-landscape.jpg')} />
       </View>
     );

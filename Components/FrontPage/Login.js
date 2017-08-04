@@ -12,7 +12,7 @@ import {
 class Login extends Component {
   render() {
     return (
-
+        <Text> Login stuff </Text>
     );
   }
 }

@@ -13,7 +13,7 @@ class Owner extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
+        <Text style={styles.instructions}>
           Owner
         </Text>
       </View>
@@ -24,6 +24,11 @@ class Owner extends Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#000000',
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#FFFFFF',
+    marginBottom: 5,
   },
 });
 

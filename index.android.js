@@ -16,13 +16,14 @@ import {
 
 
 import FrontPage from './Components/FrontPage/FrontPage.js'
-import ProjectPage from './Componenets/ProjectPage/ProjectPage.js'
+import ProjectPage from './Components/ProjectPage/ProjectPage.js'
+import ProfilePage from './Components/UserProfile/ProfilePage.js'
 
 export default class TestProject extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProjectPage />
+        <ProfilePage />
       </View>
     );
   }
