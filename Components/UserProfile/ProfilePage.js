@@ -5,6 +5,7 @@ import {
   Image
 } from 'react-native';
 
+
 import {
   Avatar
 } from 'react-native-elements';
@@ -12,7 +13,10 @@ import {
 import SocialMedia from './SocialMedia.js'
 import Projects from './Projects.js'
 
-class ProfilePage extends Component {
+class ProfilePage extends React.Component {
+  static navigationOptions = {
+    title: 'ProfilePage',
+  };
   render() {
     return (
       <View>
@@ -30,6 +34,8 @@ class ProfilePage extends Component {
     );
   }
 }
+
+
 
 
 export default ProfilePage;

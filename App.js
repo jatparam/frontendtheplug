@@ -12,7 +12,7 @@ import {
   View,
   Image
 } from 'react-native';
-
+import { StackNavigator } from 'react-navigation';
 
 
 import FrontPage from './Components/FrontPage/FrontPage.js'
@@ -23,7 +23,7 @@ export default class TestProject extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProjectPage />
+        <FrontPage />
       </View>
     );
   }
@@ -37,5 +37,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
   },
 });
+
+const SimpleApp = StackNavigator({
+  Home: { screen: TestProject },
+  Profile: {screen: ProfilePage }
+})
+
 
 AppRegistry.registerComponent('TestProject', () => TestProject);
