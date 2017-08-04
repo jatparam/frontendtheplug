@@ -13,22 +13,16 @@ import {
   Image
 } from 'react-native';
 
-import {
-  Button,
-  PricingCard,
-  SearchBar,
-  SideMenu,
-  List,
-  ListItem
-} from 'react-native-elements';
+
 
 import FrontPage from './Components/FrontPage/FrontPage.js'
+import ProjectPage from './Componenets/ProjectPage/ProjectPage.js'
 
 export default class TestProject extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <FrontPage />
+        <ProjectPage />
       </View>
     );
   }

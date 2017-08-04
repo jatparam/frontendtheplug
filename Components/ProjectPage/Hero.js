@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
   Text,
   View,
   Image
 } from 'react-native';
 
-
-class Projects extends Component {
+class Hero extends Component {
   render() {
     return (
       <View>
-      // TODO Make sure diff photo dependent on project
+        // TODO make image source one the user imports
         <Image source={require('../../assets/img/6835100-landscape.jpg')} />
-        <Text> Project Title </Text>
       </View>
     );
   }
 }
 
 
-export default Projects;
+export default Hero;
