@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
-  Image
+  Image,
+  TouchableOpacity
 } from 'react-native';
 
 import Hero from './Hero.js';
@@ -21,7 +22,10 @@ class ProjectPage extends Component {
       <View>
         <Hero />
         <Owner />
+
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('ProfilePage')} >
         <Collaborators />
+        </TouchableOpacity>
       </View>
     );
   }

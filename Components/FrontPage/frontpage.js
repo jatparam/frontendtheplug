@@ -16,11 +16,11 @@
    List,
    ListItem
  } from 'react-native-elements';
- import { StackNavigator } from 'react-navigation';
+
 
 import LogoImg from './Logo.js';
 import Login from './Login.js';
-import ProfilePage from '../UserProfile/ProfilePage'
+
 
 
 class FrontPage extends React.Component {

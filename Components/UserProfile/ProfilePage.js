@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
-  Image
+  Image,
+  TouchableOpacity
 } from 'react-native';
 
 
@@ -29,7 +30,10 @@ class ProfilePage extends React.Component {
         />
         <Text> Quick bio </Text>
         <SocialMedia />
+
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
         <Projects />
+        </TouchableOpacity>
       </View>
     );
   }
