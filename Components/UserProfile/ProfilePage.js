@@ -4,7 +4,8 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  View
 } from 'react-native';
 
 
@@ -23,20 +24,20 @@ class ProfilePage extends React.Component {
   render() {
     return (
       <ScrollView >
-        <Tile
-          imageSrc={require('../../assets/img/6835100-landscape.jpg')}
-          featured
-          title='Jatharsan Param'
-          caption='Schulich School of Business - York University'
-        />
-        <Avatar
-          small
-          rounded
-          source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"}}
-          onPress={() => console.log("Works!")}
-          activeOpacity={0.7}
-        />
-        <Text> Quick bio </Text>
+
+        <Image source={require('../../assets/img/6835100-landscape.jpg')} >
+          <View style={styles.herocontainer}>
+          <Avatar
+            xlarge
+            rounded
+            source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"}}
+            onPress={() => console.log("Works!")}
+            activeOpacity={0.7}
+          />
+          <Text style={styles.biotext}> This is where my one liner will be </Text>
+          </View>
+        </Image>
+
         <SocialMedia/>
 
         <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
@@ -49,7 +50,14 @@ class ProfilePage extends React.Component {
 }
 
 const styles = StyleSheet.create({
-
+  biotext: {
+    color: '#0000FF',
+  },
+  herocontainer: {
+    flex: 1,
+    alignItems: 'center',
+    translateY: 60,
+  }
 })
 
 
