@@ -19,14 +19,17 @@ class Projects extends Component {
       <View>
 
       <Text> Project Title </Text>
-        <Image source={require('../../assets/img/6835100-landscape.jpg')} />
-
-
-
+      <Image source={require('../../assets/img/6835100-landscape.jpg')} />
+      <Text style={styles.statusContainer}> InProgress </Text>
       </View>
     );
   }
 }
 
+const styles = StyleSheet.create({
+  statusContainer: {
+    backgroundColor: '#0000FF',
+  }
+})
 
 export default Projects;

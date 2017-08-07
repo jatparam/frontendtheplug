@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import {
   Text,
-  View,
+  ScrollView,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  StyleSheet
 } from 'react-native';
 
 
 import {
-  Avatar
+  Avatar,
+  Tile
 } from 'react-native-elements';
 
 import SocialMedia from './SocialMedia.js'
@@ -20,7 +22,13 @@ class ProfilePage extends React.Component {
   };
   render() {
     return (
-      <View>
+      <ScrollView >
+        <Tile
+          imageSrc={require('../../assets/img/6835100-landscape.jpg')}
+          featured
+          title='Jatharsan Param'
+          caption='Schulich School of Business - York University'
+        />
         <Avatar
           small
           rounded
@@ -29,16 +37,20 @@ class ProfilePage extends React.Component {
           activeOpacity={0.7}
         />
         <Text> Quick bio </Text>
-        <SocialMedia />
+        <SocialMedia/>
 
         <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
         <Projects />
+        <Projects />
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     );
   }
 }
 
+const styles = StyleSheet.create({
+
+})
 
 
 
