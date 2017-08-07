@@ -24,13 +24,7 @@ import ProfilePage from '../UserProfile/ProfilePage'
 
 
 class FrontPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
-  static navigationOptions = ({navigation}) => ({
-    title: 'FrontPage',
-  });
    render() {
      console.log("Log", this.props);
      return (
@@ -38,29 +32,25 @@ class FrontPage extends React.Component {
          <LogoImg />
          <Login />
          <Button
-           onPress={() => {
-             this.props.navigation.navigate('Profile')
-           }}
-           title='Head to profile'  />
-         {/* <SocialIcon
+           onPress={() => this.props.navigation.navigate('ProfilePage')}  />
+        <SocialIcon
          title='Sign In With Facebook'
          button
          type='facebook'
-         /> */}
-
+         />
        </View>
      );
    }
  }
 
- const SimpleApp = StackNavigator({
-   Home: {screen: FrontPage },
-   Profile: {screen: ProfilePage }
- })
+ // const SimpleApp = StackNavigator({
+ //   Home: {screen: FrontPage },
+ //   Profile: {screen: ProfilePage }
+ // })
 
 // export default StackNavigator({
 //    Home: {screen: FrontPage },
 //    Profile: {screen: ProfilePage }
 //  });
 //
- export default SimpleApp
+ export default FrontPage
