@@ -25,20 +25,25 @@ class ProfilePage extends React.Component {
     return (
       <ScrollView >
 
-        <Image source={require('../../assets/img/6835100-landscape.jpg')} >
-          <View style={styles.herocontainer}>
-          <Avatar
-            xlarge
-            rounded
-            source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"}}
-            onPress={() => console.log("Works!")}
-            activeOpacity={0.7}
-          />
-          <Text style={styles.biotext}> This is where my one liner will be </Text>
-          </View>
-        </Image>
 
-        <SocialMedia/>
+          <View style={styles.herocontainer}>
+            <View>
+              <Avatar
+                xlarge
+                rounded
+                source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"}}
+                onPress={() => console.log("Works!")}
+                activeOpacity={0.7}
+              />
+              <Text style={styles.biotext}> This is where my one liner will be </Text>
+            </View>
+            <View>
+              <SocialMedia/>
+            </View>
+          </View>
+
+
+
 
         <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
         <Projects />
@@ -55,8 +60,7 @@ const styles = StyleSheet.create({
   },
   herocontainer: {
     flex: 1,
-    alignItems: 'center',
-    translateY: 60,
+    flexDirection: 'row',
   }
 })
 

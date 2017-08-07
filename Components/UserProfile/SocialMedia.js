@@ -45,13 +45,9 @@ class SocialMedia extends Component {
 }
 
 const styles = StyleSheet.create({
-  Container: {
-    flex: 1,
-    flexDirection: 'row',
-  },
   InnerContainer: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: 'row',
   }
 })
 
