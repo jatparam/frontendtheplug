@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
 import {
-  Text,
-  ScrollView,
-  Image,
-  TouchableOpacity,
   StyleSheet,
-  View
+  View,
 } from 'react-native';
 
-import Bar from './Bar.js';
+import {
+  Button,
+} from 'react-native-elements';
+
+
 import Header from './Header.js';
 import PhotoGrid from './PhotoGrid.js';
 
-class ProfilePagex extends Component {
+class ProfilePage extends Component {
+  static navigationOptions = {
+    title: 'ProfilePage',
+  };
   render() {
     return (
       <View style={styles.container}>
         <Header />
+        <Button onPress={() => this.props.navigation.navigate('MyProjectPage')}/>
         <PhotoGrid />
       </View>
     );
@@ -30,4 +34,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default ProfilePagex;
+export default ProfilePage;
