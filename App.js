@@ -28,7 +28,7 @@ import { Basic } from './config/router.js';
 export default class TestProject extends Component {
   render() {
     return (
-      <MyProjectPage />
+      <FrontPage />
     );
   }
 }
