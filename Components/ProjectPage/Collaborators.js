@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {
+  StyleSheet,
   Text,
   View,
-  Image
+  Image,
 } from 'react-native';
 
 import {
@@ -31,15 +32,22 @@ class Collaborators extends Component {
   render() {
     return (
       <View>
-        <OneCollab />
-        <OneCollab />
-        <OneCollab />
-        <OneCollab />
-        <OneCollab />
+          <OneCollab />
+          <OneCollab />
+          <OneCollab />
+          <OneCollab />
+          <OneCollab />
       </View>
     );
   }
 }
 
+
+const styles = StyleSheet.create({
+  innerContainer: {
+    flex: 1,
+    flexDirection: 'row',
+  }
+})
 
 export default Collaborators;

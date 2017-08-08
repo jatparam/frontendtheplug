@@ -20,14 +20,14 @@ import ProjectPage from './Components/ProjectPage/ProjectPage.js'
 import ProfilePage from './Components/UserProfile/ProfilePage.js'
 import UserDetail from './Components/UserProfile/TestFile.js'
 
+import ProfilePagex from './Components/ProfilePage/ProfilePage.js'
+
 import { Basic } from './config/router.js';
 
 export default class TestProject extends Component {
   render() {
     return (
-      <View>
-      <ProfilePage/>
-      </View>
+      <ProfilePagex />
     );
   }
 }

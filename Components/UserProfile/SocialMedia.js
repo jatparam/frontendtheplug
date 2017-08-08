@@ -14,7 +14,7 @@ import {
 class SocialMedia extends Component {
   render() {
     return (
-      <View style={styles.Container}>
+      <View>
         <View style={styles.InnerContainer}>
           <SocialIcon
             type='instagram'

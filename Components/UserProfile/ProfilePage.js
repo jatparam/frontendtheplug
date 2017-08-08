@@ -42,13 +42,18 @@ class ProfilePage extends React.Component {
             </View>
           </View>
 
-
-
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
+        <Projects />
+        </TouchableOpacity>
 
         <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
         <Projects />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('ProjectPage')} >
         <Projects />
         </TouchableOpacity>
+
       </ScrollView>
     );
   }
