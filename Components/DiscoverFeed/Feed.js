@@ -12,6 +12,9 @@ import { Card } from 'react-native-elements'
 import DProjects from './DiscoverProjects.js'
 
 class Feed extends Component {
+  static navigationOptions = {
+    title: 'Feed',
+  };
   render() {
     return (
       <ScrollView>

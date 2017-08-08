@@ -24,12 +24,12 @@ import ProfilePagex from './Components/ProfilePage/ProfilePage.js';
 import MyProjectPage from './Components/MyProjectPage/MyProjectPage.js';
 import Feed from './Components/DiscoverFeed/Feed.js';
 
-import { Basic } from './config/router.js';
+import { MainStack } from './config/router.js';
 
 export default class TestProject extends Component {
   render() {
     return (
-      <Feed />
+      <MainStack />
     );
   }
 }

@@ -26,7 +26,9 @@ let WINDOW_WIDTH = Dimensions.get('window').width;
 let WINDOW_HEIGHT = Dimensions.get('window').heigth;
 
 class FrontPage extends React.Component {
-
+    static navigationOptions = {
+      title: 'FrontPage',
+    };
    render() {
      console.log("Log", this.props);
      return (
@@ -34,6 +36,7 @@ class FrontPage extends React.Component {
            source={require('../../assets/img/login-background4.jpg')}
            style={styles.backgroundImage}>
          <LogoImg />
+         <Button onPress={() => this.props.navigation.navigate('ProfilePagex')}/>
          {/* <Login /> */}
         {/* <SocialIcon
           onPress={() => this.props.navigation.navigate('ProfilePage')}
