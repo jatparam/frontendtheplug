@@ -5,7 +5,8 @@
    StyleSheet,
    Text,
    View,
-   Image
+   Image,
+   Dimensions
  } from 'react-native';
 
  import {
@@ -21,28 +22,41 @@
 import LogoImg from './Logo.js';
 import Login from './Login.js';
 
-
+let WINDOW_WIDTH = Dimensions.get('window').width;
+let WINDOW_HEIGHT = Dimensions.get('window').heigth;
 
 class FrontPage extends React.Component {
 
    render() {
      console.log("Log", this.props);
      return (
-       <View>
+         <Image
+           source={require('../../assets/img/login-background4.jpg')}
+           style={styles.backgroundImage}>
          <LogoImg />
-         <Login />
-         <Button
-           onPress={() => this.props.navigation.navigate('ProfilePage')}  />
-        <SocialIcon
-         title='Sign In With Facebook'
-         button
+         {/* <Login /> */}
+        {/* <SocialIcon
+          onPress={() => this.props.navigation.navigate('ProfilePage')}
          type='facebook'
-         />
-       </View>
+         /> */}
+       </Image>
+
      );
    }
  }
 
+ const styles = StyleSheet.create({
+   backgroundImage: {
+     flex: 1,
+     width: WINDOW_WIDTH,
+     height: WINDOW_HEIGHT,
+     backgroundColor:'transparent',
+    //  justifyContent: 'center',
+     alignItems: 'center',
+    // justifyContent: 'center',
+
+  }
+ });
  // const SimpleApp = StackNavigator({
  //   Home: {screen: FrontPage },
  //   Profile: {screen: ProfilePage }
