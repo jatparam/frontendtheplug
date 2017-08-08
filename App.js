@@ -16,9 +16,7 @@ import { StackNavigator } from 'react-navigation';
 
 
 import FrontPage from './Components/FrontPage/FrontPage.js';
-import ProjectPage from './Components/ProjectPage/ProjectPage.js';
-import ProfilePage from './Components/UserProfile/ProfilePage.js';
-import UserDetail from './Components/UserProfile/TestFile.js';
+
 
 import ProfilePagex from './Components/ProfilePage/ProfilePage.js';
 import MyProjectPage from './Components/MyProjectPage/MyProjectPage.js';
@@ -43,10 +41,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SimpleApp = StackNavigator({
-  Home: { screen: TestProject },
-  Profile: {screen: ProfilePage }
-})
+
 
 
 AppRegistry.registerComponent('TestProject', () => TestProject);
