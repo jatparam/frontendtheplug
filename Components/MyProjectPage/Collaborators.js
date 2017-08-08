@@ -31,12 +31,22 @@ class OneCollab extends Component {
 class Collaborators extends Component {
   render() {
     return (
-      <View>
-          <OneCollab />
-          <OneCollab />
-          <OneCollab />
-          <OneCollab />
-          <OneCollab />
+      <View style={styles.container}>
+        <View style={styles.inner}>
+            <OneCollab />
+        </View>
+        <View style={styles.inner}>
+            <OneCollab />
+        </View>
+        <View style={styles.inner}>
+            <OneCollab />
+        </View>
+        <View style={styles.inner}>
+            <OneCollab />
+        </View>
+        <View style={styles.inner}>
+            <OneCollab />
+        </View>
       </View>
     );
   }
@@ -44,10 +54,14 @@ class Collaborators extends Component {
 
 
 const styles = StyleSheet.create({
-  innerContainer: {
+  container: {
     flex: 1,
     flexDirection: 'row',
-  }
+    justifyContent: 'center',
+  },
+  inner: {
+    margin: 10,
+  },
 })
 
 export default Collaborators;
