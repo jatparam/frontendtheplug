@@ -4,14 +4,14 @@ import { StackNavigator } from 'react-navigation';
 import FrontPage from '../Components/FrontPage/FrontPage.js';
 import Feed from '../Components/DiscoverFeed/Feed.js';
 import MyProjectPage from '../Components/MyProjectPage/MyProjectPage.js';
-import ProfilePagex from '../Components/ProfilePage/ProfilePage.js';
+import ProfilePage from '../Components/ProfilePage/ProfilePage.js';
 
 export const MainStack = StackNavigator({
   FrontPage: {
     screen: FrontPage,
   },
-  ProfilePagex: {
-    screen: ProfilePagex,
+  ProfilePage: {
+    screen: ProfilePage,
   },
   MyProjectPage: {
     screen: MyProjectPage,

@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Button,
   ScrollView
 } from 'react-native';
 

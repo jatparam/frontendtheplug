@@ -1,24 +1,14 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
   View,
-  Image
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 
 import FrontPage from './Components/FrontPage/FrontPage.js';
-
-
-import ProfilePagex from './Components/ProfilePage/ProfilePage.js';
+import ProfilePage from './Components/ProfilePage/ProfilePage.js';
 import MyProjectPage from './Components/MyProjectPage/MyProjectPage.js';
 import Feed from './Components/DiscoverFeed/Feed.js';
 
@@ -40,8 +30,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
   },
 });
-
-
-
 
 AppRegistry.registerComponent('TestProject', () => TestProject);

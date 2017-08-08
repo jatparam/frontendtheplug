@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import {
-  Text,
-  ScrollView,
-  Image,
-  TouchableOpacity,
   StyleSheet,
   View,
 } from 'react-native';
@@ -12,13 +8,13 @@ import {
   Button,
 } from 'react-native-elements';
 
-import Bar from './Bar.js';
+
 import Header from './Header.js';
 import PhotoGrid from './PhotoGrid.js';
 
-class ProfilePagex extends Component {
+class ProfilePage extends Component {
   static navigationOptions = {
-    title: 'ProfilePagex',
+    title: 'ProfilePage',
   };
   render() {
     return (
@@ -38,4 +34,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default ProfilePagex;
+export default ProfilePage;

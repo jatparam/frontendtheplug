@@ -36,7 +36,7 @@ class FrontPage extends React.Component {
            source={require('../../assets/img/login-background4.jpg')}
            style={styles.backgroundImage}>
          <LogoImg />
-         <Button onPress={() => this.props.navigation.navigate('ProfilePagex')}/>
+         <Button onPress={() => this.props.navigation.navigate('ProfilePage')}/>
          {/* <Login /> */}
         {/* <SocialIcon
           onPress={() => this.props.navigation.navigate('ProfilePage')}
